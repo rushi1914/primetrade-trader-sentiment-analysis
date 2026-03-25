@@ -23,7 +23,8 @@ primetrade_assignment/
 │   ├── chart3_segment_performance.png
 │   ├── chart4_heatmap_sentiment_segment.png
 │   ├── chart5_trader_archetypes.png
-│   └── chart6_timeline_sentiment_pnl.png
+│   ├── chart6_timeline_sentiment_pnl.png
+│   └── chart7_regime_transitions.png
 └── README.md
 ```
 
@@ -73,6 +74,7 @@ Run all cells in order (Kernel → Restart & Run All).
 | 4 | Only **9 of 32 traders are consistent winners** — discipline beats aggression |
 | 5 | **Win rate (0.298) and leverage (0.270)** are top predictors of next-day profitability |
 | 6 | **4 behavioral archetypes** identified: Hyperactive, Consistent Performer, Balanced, Underperformer |
+| 7 | **Regime transitions produce 55% higher mean PnL** — the 1-3 days after a sentiment switch are the highest alpha window |
 
 ---
 
@@ -87,15 +89,24 @@ Run all cells in order (Kernel → Restart & Run All).
 - During Fear days, reduce frequency but maintain discipline
 - Consistent winners profit on both Fear ($303) and Greed ($697) days
 
+**Strategy 3 — Regime Transition Trading**
+- Monitor sentiment daily for Fear↔Greed switches
+- On transition day + 2 days after: increase position sizing
+- This window produces the highest mean PnL in the entire dataset ($6,363 vs $4,112)
+
 ---
 
 ## Bonus
 
 - **Predictive Model:** Gradient Boosting Classifier achieves **66.45% accuracy** predicting next-day profitability
 - **Trader Clustering:** KMeans identifies 4 behavioral archetypes with distinct risk/reward profiles
-
+- **Regime Transition Analysis:** Sentiment switches produce 55% higher mean PnL — a novel institutional-grade insight
 ---
 
 ## Author
 
 Submitted as part of the Data Science Internship application at **Primetrade.ai**
+
+**Rushikesh Baban Kedar**
+rushikedar40@gmail.com
+8605453442

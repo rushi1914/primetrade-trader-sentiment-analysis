@@ -103,6 +103,34 @@ Run all cells in order (Kernel → Restart & Run All).
 - **Regime Transition Analysis:** Sentiment switches produce 55% higher mean PnL — a novel institutional-grade insight
 ---
 
+## Dashboard Preview
+
+An interactive Streamlit dashboard is included for exploring results visually.
+
+### Tab 1 — Performance Overview
+![Performance](dashboard/screenshots/tab1_performance.png)
+
+### Tab 2 — Performance Charts
+![Performance Charts](dashboard/screenshots/tab2_performance.png)
+
+### Tab 3 — Trader Behavior
+![Behavior](dashboard/screenshots/tab3_behavior.png)
+
+### Tab 4 — Trader Segments
+![Segments](dashboard/screenshots/tab4_segments.png)
+
+### Tab 5 — Model & Archetypes
+![Model](dashboard/screenshots/tab5_model.png)
+
+### Tab 6 — Regime Transitions
+![Transitions](dashboard/screenshots/tab6_transitions.png)
+
+### ▶️ Run Dashboard Locally
+```
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+
 ## Author
 
 Submitted as part of the Data Science Internship application at **Primetrade.ai**

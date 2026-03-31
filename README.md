@@ -68,13 +68,13 @@ Run all cells in order (Kernel → Restart & Run All).
 
 | # | Insight |
 |---|---|
-| 1 | Greed days produce **2x higher median PnL** ($243 vs $123) |
-| 2 | Traders use **higher leverage on Fear days** (4.39 vs 3.10) — increasing risk during volatility |
-| 3 | **High leverage traders thrive on Fear days** — low leverage traders dominate on Greed days |
-| 4 | Only **9 of 32 traders are consistent winners** — discipline beats aggression |
+| 1 | Greed days produce **~2x higher median PnL** ($243 vs $123) |
+| 2 | Traders use **higher leverage on Fear days** (4.39 vs 3.10), increasing risk during volatility |
+| 3 | **High leverage traders perform better on Fear days**, while low leverage traders dominate on Greed days |
+| 4 | Only **9 of 32 traders are consistent winners** — discipline beats aggressive trading |
 | 5 | **Win rate (0.298) and leverage (0.270)** are top predictors of next-day profitability |
 | 6 | **4 behavioral archetypes** identified: Hyperactive, Consistent Performer, Balanced, Underperformer |
-| 7 | **Regime transitions produce 55% higher mean PnL** — the 1-3 days after a sentiment switch are the highest alpha window |
+| 7 | **Regime transitions produce 55% higher mean PnL** — the 1–3 days after a sentiment switch are the highest alpha window |
 
 ---
 
@@ -82,7 +82,7 @@ Run all cells in order (Kernel → Restart & Run All).
 
 **Strategy 1 — Sentiment-Based Leverage Adjustment**
 - Fear days → High leverage traders stay active (3x better PnL than on Greed days)
-- Greed days → Reduce leverage, ride the trend steadily
+- Greed days → Reduce leverage and follow steady trend-based strategies
 
 **Strategy 2 — Consistency Over Big Wins**
 - Maintain win rate above 40% with controlled position sizing
@@ -90,17 +90,18 @@ Run all cells in order (Kernel → Restart & Run All).
 - Consistent winners profit on both Fear ($303) and Greed ($697) days
 
 **Strategy 3 — Regime Transition Trading**
-- Monitor sentiment daily for Fear↔Greed switches
-- On transition day + 2 days after: increase position sizing
-- This window produces the highest mean PnL in the entire dataset ($6,363 vs $4,112)
+- Monitor sentiment daily for Fear ↔ Greed switches
+- On transition day + next 2 days: increase position sizing
+- This window produces the highest mean PnL in the dataset ($6,363 vs $4,112)
 
 ---
 
 ## Bonus
 
-- **Predictive Model:** Gradient Boosting Classifier achieves **66.45% accuracy** predicting next-day profitability
-- **Trader Clustering:** KMeans identifies 4 behavioral archetypes with distinct risk/reward profiles
-- **Regime Transition Analysis:** Sentiment switches produce 55% higher mean PnL — a novel institutional-grade insight
+- **Predictive Model:** Gradient Boosting Classifier achieves **66.45% accuracy** predicting next-day profitability  
+- **Trader Clustering:** KMeans identifies 4 behavioral archetypes with distinct risk/reward profiles  
+- **Regime Transition Analysis:** Sentiment switches produce 55% higher mean PnL — a strong trading signal  
+
 ---
 
 ## Dashboard Preview
@@ -131,10 +132,12 @@ pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
 
+---
+
 ## Author
 
 Submitted as part of the Data Science Internship application at **Primetrade.ai**
 
-**Rushikesh Baban Kedar**
-rushikedar40@gmail.com
+**Rushikesh Baban Kedar**  
+rushikedar40@gmail.com  
 8605453442
